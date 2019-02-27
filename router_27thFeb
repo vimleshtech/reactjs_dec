@@ -1,0 +1,32 @@
+npm i react-router-dom --save
+
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+
+
+--render --
+
+
+<Router>
+      <div>
+        <ul>
+          <li>
+            <Link to="/">Header</Link>
+          </li>
+          <li>
+            <Link to="/Employee">Employee</Link>
+          </li>
+          <li>
+            <Link to="/ButtonEvent">ButtonEvent</Link>
+          </li>
+        </ul>
+
+        <hr />
+
+        <Route exact path="/" component={Header} />
+        <Route path="/ButtonEvent" component={ButtonEvent} />
+        <Route path="/Employee" component={Employee} />
+      </div>
+    </Router> 
+
+
+
